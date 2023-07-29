@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #3e8e6b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    box-shadow: 1px 1px 4px black;
+}
+a#home{
+    color: #EAE8FF;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.menu{
+    display: block;
+}
+.menu a{
+    color: #EAE8FF;
+    margin-right: 20px;
+    text-decoration: none;
+} 
+.navbar a:hover, #home:hover{
+    transition: .3s;
+    color: #ADACB5;
+}
+/* .Content1{
+    display: flex;
+    justify-content: center;
+} */
+.content{
+    display: block;
+    width: 1000px;
+    margin: 40px auto;
+}
+.content h1{
+    margin: 0px auto;
+    width: 500px;
+    text-align: center;
+}
+.grade10, .grade11{
+    height: 180px;
+    background-color: blue;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 20px auto;
+}
+.card{
+    display: inline-block;
+    color: black;
+    width: 200px;
+    height: 100%;
+    padding: 14px;
+    text-decoration: none;
+    border-right: 10px solid white;
+}
+.Content2{
+    display: block;
+    width: 900px;
+    margin: auto;
+}
+.Content2 h1{
+    text-align: center;
+}
+.Grade12Ips{
+    height: 180px;
+    background-color: khaki;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 20px auto;
+}
+.Grade12Ips .mtpel{
+    display: inline-block;
+    color: white;
+    height: 100%;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-right: 10px solid white;
+}
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

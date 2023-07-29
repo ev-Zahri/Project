@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #274156;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    box-shadow: 1px 1px 4px #517b54;
+    z-index: 2;
+}
+a#home{
+    color: #EAE8FF;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.menu{
+    display: block;
+}
+.menu a{
+    color: #EAE8FF;
+    margin-right: 20px;
+    text-decoration: none;
+} 
+.navbar a:hover, #home:hover{
+    transition: .3s;
+    color: #ADACB5;
+}
+.sidebar{
+    position: fixed;
+    float: left;
+    width: 200px;
+    height: 700px;
+    margin-top: 3px;
+    background: #9b1d20;
+}
+.profile img{
+    display: inline-block;
+    margin: 20px 5px 0px 25px;
+    width: 45px;
+    border-radius: 50%;
+}
+.profile h4{
+    position: relative;
+    display: inline-block;
+    top: -10px;
+    font-size: 20px;
+    color: white;
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+}
+.option a{
+    display: block;
+    margin-top: 3px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid palevioletred;
+}
+.main{
+    margin: 0px 13px 0px 220px;
+}
+                /* modal  */
+.outerModal{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.outerModal h1{
+    margin: 10px 40px;
+    font-size: 40px;
+}
+.outerModal a{
+    position: relative;
+    margin: 0px 60px;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.outerModal ion-icon{
+    position: relative;
+    top: 2px;
+    left: 4px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.outerModal button#myBtn{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    top: 18px;
+    background: white;
+    color: black;
+    padding: 4px;
+    margin-left: 20px;
+    border: 3px solid rgba(128, 128, 128, 0.358);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .7s;
+}
+.outerModal button#myBtn:hover{
+    width: 200px;
+    background: rgb(101, 101, 101);
+    color: white;
+    border: 1px solid black;
+}
+        /* ADD Modal Content */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+.modal-content form {
+    width: 100%;
+    padding: 20px;
+}
+.modal-content span#head{
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.modal label, input {
+    padding: 10px;
+    margin: 3px;
+    font-size: 20px;
+}
+.modal label {
+    display: inline-block;
+    width: 20%;
+}
+.modal-content input{
+    display: inline-block;
+    border: none;
+    background: transparent;
+    letter-spacing: .9;
+}
+.modal-content input[type = "text"]{
+    width: 70%;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.modal-content button{
+    position: relative;
+    left: 45%;
+    width: 100px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    color: black;
+    border-radius: 2px;
+}
+.modal-content button:hover{
+    background: rgb(57, 57, 57);
+    color: white;
+}
+/* input tipe data  */
+.modal-content input[type="date"]{
+    background-color: rgb(183, 88, 41);
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.modal-content ::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* input tipe time  */
+.modal-content input[type=time] {
+    border: none;
+    color: #2a2c2d;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 220px;
+  }
+  
+  /* Wrapper around the hour, minute, second, and am/pm fields as well as 
+  the up and down buttons and the 'X' button */
+  .modal-content input[type=time]::-webkit-datetime-edit-fields-wrapper {
+    display: flex;
+  }
+  
+  /* The space between the fields - between hour and minute, the minute and 
+  second, second and am/pm */
+  .modal-content input[type=time]::-webkit-datetime-edit-text {
+    padding: 19px 4px;
+  }
+  
+  /* The naming convention for the hour, minute, second, and am/pm field is
+  `-webkit-datetime-edit-{field}-field` */
+  
+  /* Hour */
+  .modal-content input[type=time]::-webkit-datetime-edit-hour-field {
+    background-color: #f2f4f5;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* Minute */
+  .modal-content input[type=time]::-webkit-datetime-edit-minute-field {
+    background-color: #f2f4f5;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* AM/PM */
+  .modal-content input[type=time]::-webkit-datetime-edit-ampm-field {
+    background-color: rgb(183, 88, 41);
+    border-radius: 15%;
+    color: #fff;
+    padding: 19px 13px;
+  }
+  
+  /* 'X' button for resetting/clearing time */
+  .modal-content input[type=time]::-webkit-clear-button {
+    display: none;
+  }
+  
+  /* Up/Down arrows for incrementing/decrementing the value */
+  .modal-content input[type=time]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  .modal-content select{
+    width: 20%;
+    height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+/* The Close Button */
+.close ion-icon{
+    position: relative;
+    color: #aaaaaa;
+    margin-right: 20px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close ion-icon:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+                /* end ADD modal */
+table{
+    width: 100%;
+    z-index: 1;
+}
+table th{
+    background-color: #AAF0D1;
+    color: black;
+}
+table tr{
+    background: #556B2F;
+    color: white;
+}
+table tr:nth-child(even){
+    background: #ffe428;
+    color: black;
+}
+table th, td{
+    text-align: left;
+    padding: 10px 20px;
+}
+td button{
+    width: 70px;
+    height: 25px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(158, 157, 157);
+    transition: .5s;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.w25{
+    width: 25%;
+}
+.w15{
+    width: 15%;
+}
+        /* EDIT PAGE */
+.contentEdit{
+    width: 100%;
+    margin-top: 100px;
+}
+.contentEdit form {
+    text-align: center;
+}
+.contentEdit form label{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    font-size: 19px;
+}
+.contentEdit input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 65%;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.contentEdit button{
+    width:  150px;
+    height: 40px;
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: width .6s, height .6s;
+}
+.contentEdit button:hover{
+    width: 170px;
+    height: 45px;
+    background: #aaaaaa;
+    color: white;
+}
+/* input tipe data  */
+.contentEdit input[type="date"]{
+    width: 60%;
+    background-color: rgb(183, 88, 41);
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.contentEdit ::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* input tipe time  */
+.contentEdit input[type=time] {
+    border: none;
+    color: #2a2c2d;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 220px;
+  }
+  
+  /* Wrapper around the hour, minute, second, and am/pm fields as well as 
+  the up and down buttons and the 'X' button */
+  .contentEdit input[type=time]::-webkit-datetime-edit-fields-wrapper {
+    display: flex;
+  }
+  
+  /* The space between the fields - between hour and minute, the minute and 
+  second, second and am/pm */
+  .contentEdit input[type=time]::-webkit-datetime-edit-text {
+    padding: 19px 4px;
+  }
+  
+  /* The naming convention for the hour, minute, second, and am/pm field is
+  `-webkit-datetime-edit-{field}-field` */
+  
+  /* Hour */
+  .contentEdit input[type=time]::-webkit-datetime-edit-hour-field {
+    background-color: #f2f4f5;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* Minute */
+  .contentEdit input[type=time]::-webkit-datetime-edit-minute-field {
+    background-color: #f2f4f5;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* AM/PM */
+  .contentEdit input[type=time]::-webkit-datetime-edit-ampm-field {
+    background-color: rgb(183, 88, 41);
+    border-radius: 15%;
+    color: #fff;
+    padding: 19px 13px;
+  }
+  
+  /* 'X' button for resetting/clearing time */
+  .contentEdit input[type=time]::-webkit-clear-button {
+    display: none;
+  }
+  
+  /* Up/Down arrows for incrementing/decrementing the value */
+  .contentEdit input[type=time]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  .contentEdit select{
+    width: 20%;
+    height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-bottom: 1px solid black;
+}
+  
