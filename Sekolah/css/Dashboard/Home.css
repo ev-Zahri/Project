@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #274156;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px;
+  box-shadow: 1px 1px 4px #517b54;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #eae8ff center/cover no-repeat fixed;
+}
+
+a#home {
+  color: #eae8ff;
+  margin-left: 70px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "raleway";
+}
+
+.menu {
+  display: block;
+}
+
+.menu a {
+  color: #eae8ff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+#home:hover {
+  transition: 0.3s;
+  color: #adacb5;
+}
+
+.mainPage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 60px;
+  height: 700px;
+}
+
+.mainPage p {
+  color: #283044;
+}
+
+.mainPage .leftMainPage {
+  width: 40%;
+  margin-right: 60px;
+}
+
+.mainPage h1 {
+  /* background: #cccccc; */
+  color: #283044;
+  background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  animation: gradientAnimation 10s infinite linear;
+}
+
+.mainPage .rightMainPage {
+  width: 60%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  height: 650px;
+}
+
+.firstContent {
+  width: 800px;
+  height: 500px;
+  background: #30536f;
+  padding: 10px;
+  padding-left: 50px;
+  overflow-y: scroll;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #517b54;
+}
+
+.firstContent h1 {
+  color: #d4cad4;
+  text-align: center;
+  padding: 20px;
+}
+
+.firstContent img {
+  width: 200px;
+  height: 160px;
+  cursor: zoom-in;
+  transition: 0.5s ease;
+}
+
+.firstContent img:hover {
+  border: 1px solid white;
+  scale: 0.98;
+}
+
+.firstContent::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.firstContent::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #80c1f6;
+}
+
+/* Handle */
+.firstContent::-webkit-scrollbar-thumb {
+  background: #4c82af;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+.firstContent::-webkit-scrollbar-thumb:hover {
+  background: #25283d;
+}
+
+.secondContent {
+  width: 800px;
+  height: 500px;
+  background: #30536f;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.secondContent h1 {
+  text-align: center;
+  color: #d4cad4;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.secondContent h4 {
+  width: 400px;
+  margin: 0px auto;
+  font-size: 18px;
+  color: white;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.secondContent p {
+  color: white;
+  width: 500px;
+  font-size: 16px;
+  text-align: justify;
+  margin: 0px auto;
+}
+
+.kegiatan {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.kegiatan a {
+  display: block;
+  width: 240px;
+  margin-left: 10px;
+  padding: 5px;
+  background: #80c1f6;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.kegiatan a:hover {
+  background-color: black;
+  scale: 1.03;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  height: 600px;
+}
+
+.firstCard,
+.secondCard,
+.thirdCard {
+  width: 400px;
+  height: 500px;
+  background: #9b1d20;
+  color: white;
+  box-shadow: 1px 1px 4px #a0b6bd;
+  border-radius: 20px;
+}
+
+.firstCard h3,
+.secondCard h3,
+.thirdCard h3 {
+  text-align: center;
+  margin: 20px;
+}
+
+.firstCard p,
+.secondCard p {
+  line-height: 20px;
+  padding: 0px 20px;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.thirdCard p {
+  line-height: 20px;
+  padding: 0px 20px;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.footer {
+  height: 100px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 40px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+input {
+  width: 600px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 20px;
+}
+
+.footer ion-icon {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+}
+
+.footer button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}

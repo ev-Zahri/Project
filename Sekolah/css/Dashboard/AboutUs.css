@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    background: #274156;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    box-shadow: 1px 1px 4px black;
+    animation: fade-in 0s ease;
+}
+a#home{
+    color: #fefefe;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.menu{
+    display: block;
+}
+.menu a{
+    color: #EAE8FF;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+} 
+.navbar a:hover, #home:hover{
+    transition: .3s;
+    color: black;
+}
+h1{
+    text-align: center;
+    /* width: 1000px; */
+    /* margin: 200px 300px 100px 450px; */
+    padding: 100px;
+    padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: slide-up 2s ease-in-out;
+}
+.h00{
+    text-align: center;
+    /* width: 10px; */
+    /* margin: 20px 300px 100px 500px; */
+    padding: 0px 20px 0px 20px;
+    font-size: 30px;
+    font-family:Arial,4 Helvetica, sans-serif;
+    animation: slide-up 6s ease-in-out;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    margin: 10px 80px;
+    align-items: center;
+    animation: slide-up 4s ease-in-out;
+    color: #07485d;
+}
+.firstCard, .secondCard, .thirdCard, .fourthCard{
+    width: 300px;
+    height: 400px;
+    border-radius: 10%;
+    background: #274156;
+    color: #f54e29;
+    text-align: center;
+}
+.firstCard{
+    background: #9b1d20;
+  animation: fade-in 2s ease-in-out;
+  animation: bubble 4s ease-in-out infinite;
+}
+.secondCard{
+    background: #274156;
+    animation: fade-in 4s ease-in-out;
+    animation: bubble 3s ease-in-out infinite;
+}
+.thirdCard{
+    background: #80c1f6;
+    animation: fade-in 6s ease-in-out;
+    animation: bubble 4s ease-in-out infinite;
+}
+.fourthCard{
+    background: #07485d;
+    animation: fade-in 8s ease-in-out;
+    animation: bubble 3s ease-in-out infinite;
+}
+.topLayer {
+    height: 180px;
+    border-radius: 10%;
+    text color: white;
+    background-color: #dfaf77;
+}
+.topLayer a:hover, #home:hover{
+    transition: .3s;
+    color: white;
+}
+h3{
+    padding: 60px 0px;
+    font-size: 29px;
+}
+.socialMedia {
+    font-size: 20px;
+    margin-top: 60px;
+}
+.socialMedia a {
+    color: white;
+    transition: .3s;
+    margin: 20px;
+    text-decoration: none;
+    position: relative;
+}
+.socialMedia a:hover, #home:hover{
+    transition: .3s;
+    color: black;
+}
+.socialMedia a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.socialMedia a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.ig{
+    transition: transform 0.3s ease-in-out;
+}
+.ig:hover {
+    transform: translateX(10px);
+}
+.twitter{
+    transition: transform 0.3s ease-in-out;
+}
+.twitter:hover {
+    transform: translateX(-10px);
+}
+.head {
+  margin-top: 3px;
+  text-align: center;
+  background: white;
+  height: 400px;
+  padding-top: 100px;
+  animation: fade-in 0s ease;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -110px;
+  animation: fade-in 1s ease;
+}
+.cardLeft,
+.cardRight {
+  background: #eae8ff;
+  width: 500px;
+  margin: 0px 20px;
+  height: 300px;
+  text-align: center;
+  animation: flip 2s ease-in-out;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body {
+  background: linear-gradient(-45deg, #274156, #274156, #eae8ff, #80c1f6);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

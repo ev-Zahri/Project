@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #274156;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    box-shadow: 1px 1px 4px #517b54;
+    z-index: 2;
+}
+a#home{
+    color: #EAE8FF;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.menu{
+    display: block;
+}
+.menu a{
+    color: #EAE8FF;
+    margin-right: 20px;
+    text-decoration: none;
+} 
+.navbar a:hover, #home:hover{
+    transition: .3s;
+    color: #ADACB5;
+}
+.sidebar{
+    position: fixed;
+    float: left;
+    width: 200px;
+    height: 700px;
+    margin-top: 3px;
+    background: #9b1d20;
+}
+.profile img{
+    display: inline-block;
+    margin: 20px 5px 0px 25px;
+    width: 45px;
+    border-radius: 50%;
+}
+.profile h4{
+    position: relative;
+    display: inline-block;
+    top: -10px;
+    font-size: 20px;
+    color: white;
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+}
+.option a{
+    display: block;
+    margin-top: 3px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid palevioletred;
+}
+.main{
+    margin: 0px 13px 0px 220px;
+}
+.w10{
+    width: 10%;
+}
+.w25{
+    width: 25%;
+}
+.main{
+    width: 100% - 200px;
+    height: 680px;
+    margin: 3px 0px 0px 200px;
+    background: #eae8ff center/cover no-repeat fixed;
+}
+.firstContent{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.card-1{
+    display: inline-flex;
+    position: relative;
+    width: 300px;
+    height: 180px;
+    background: #80c1f6;
+    border-radius: 10px;
+    background-size: 300px 180px;
+}
+.card-1 h4{
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.card-1#ruang{
+    padding: 35px 73px;
+    color: white;
+    background-image: url("../../Img/ruangan.png");
+}
+.card-1#guru{
+    padding: 55px 0px 0px 134px;
+    color: white;
+    background-image: url("../../Img/guru.png");
+}
+.card-1#kelas{
+    padding: 20px 0px 0px 100px;
+    color: black;
+    background-image: url("../../Img/kelas.png");
+    background-size: 250px 180px;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+}
+.secondContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.secondContent .card-2{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background: #80c1f6;
+    margin-top: 30px;
+    background-size: 480px 260px;
+    background-repeat: no-repeat;
+    background-position: center 40px;
+}
+.card-2#mapel{
+    padding: 10px 0px 0px 150px;
+    font-size: 18px;
+    background-image: url("../../Img/mataPelajaran.png");
+}
+.card-2#jadwal{
+    padding: 30px 0px 0px 150px;
+    font-size: 20px;
+    background-image: url("../../Img/jadwalPelajaran.png");
+}
+

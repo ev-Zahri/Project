@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #3e8e6b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    box-shadow: 1px 1px 4px black;
+}
+a#home{
+    color: black;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.menu{
+    display: block;
+}
+.menu a{
+    color: #EAE8FF;
+    margin-right: 20px;
+    text-decoration: none;
+} 
+.navbar a:hover, #home:hover{
+    transition: .3s;
+    color: black;
+}
+.mainPage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 60px;
+    height: 700px;
+}
+.mainPage .leftMainPage{
+    width: 40%;
+    margin-right: 60px;
+}
+.mainPage .rightMainPage{
+    width: 60%;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    height: 650px;
+}
+.firstContent{
+    width: 800px;
+    height: 500px;
+    background: blanchedalmond;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.firstContent h1{
+    text-align: center;
+    padding: 20px;
+}
+.firstContent img{
+    width: 250px;
+    height: 200px;
+    cursor:zoom-in;
+    transition: .5s ease;
+}
+.secondContent{
+    width: 550px;
+    height: 400px;
+    background: blanchedalmond;
+}
+.secondContent h1{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+.secondContent h4{
+    width: 400px;
+    margin: 0px auto;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+}
+.secondContent p{
+    width: 500px;
+    color: black;
+    font-size: 16px;
+    margin: 0px auto;
+}
+.kegiatan {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.kegiatan a{
+    display: block;
+    width: 240px;
+    margin-left: 10px;
+    padding: 5px;
+    background: blue;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.kegiatan a:hover{
+    background-color: rgba(0, 0, 255, 0.629);
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+}
+.firstCard, .secondCard, .thirdCard{
+    width: 400px;
+    height: 500px;
+    background: navy;
+    color: white;
+}
+.firstCard h3{
+    text-align: center;
+    margin: 20px;
+}
+.firstCard p{
+    line-height: 20px;
+    padding: 0px 20px;
+    text-indent: 30px;
+}
+.footer{
+    height: 100px;
+    text-align: center;
+}
+input{
+    width: 600px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 20px;
+}
+.footer ion-icon{
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+}
+.footer button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

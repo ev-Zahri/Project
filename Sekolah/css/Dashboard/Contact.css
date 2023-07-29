@@ -1,0 +1,111 @@
+.body {
+  background: linear-gradient(-45deg, #274156, #274156, #eae8ff, #80c1f6);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    background: #274156;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    box-shadow: 1px 1px 4px black;
+    animation: fade-in 0s ease;
+}
+.navbar a:hover, #home:hover{
+    transition: 0.3s;
+    color: black;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+a#home {
+  color: #fefefe;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 3s;
+}
+.menu a {
+  color: #eae8ff;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.head {
+  margin-top: 0px;
+  text-align: center;
+  background: transparent;
+  height: 350px;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  animation: fade-in 1s ease;
+}
+.head a{
+  text-align: center;
+    width: 1000px;
+    margin: 200px 300px 100px 450px;
+    padding: 0px;
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: slide-up 2s ease-in-out;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -110px;
+  animation: fade-in 3s ease;
+  border-radius: 20%;
+}
+.cardLeft{
+  background: #274156;
+  color: white;
+  width: 500px;
+  margin: 0px 20px;
+  height: 300px;
+  text-align: center;
+  animation: flip 5s ease-in-out;
+  border-radius: 5%;
+}
+.cardRight {
+  background: #274156;
+  color: white;
+  width: 500px;
+  margin: 0px 20px;
+  height: 300px;
+  text-align: center;
+  animation: flip 5s ease-in-out;
+  border-radius: 5%;
+}
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

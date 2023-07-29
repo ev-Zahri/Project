@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #274156;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    box-shadow: 1px 1px 4px #517b54;
+    z-index: 2;
+}
+a#home{
+    color: #EAE8FF;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.menu{
+    display: block;
+}
+.menu a{
+    color: #EAE8FF;
+    margin-right: 20px;
+    text-decoration: none;
+} 
+.navbar a:hover, #home:hover{
+    transition: .3s;
+    color: #ADACB5;
+}
+.sidebar{
+    position: fixed;
+    float: left;
+    width: 200px;
+    height: 700px;
+    margin-top: 3px;
+    background: #9b1d20;
+}
+.profile img{
+    display: inline-block;
+    margin: 20px 5px 0px 25px;
+    width: 45px;
+    border-radius: 50%;
+}
+.profile h4{
+    position: relative;
+    display: inline-block;
+    top: -10px;
+    font-size: 20px;
+    color: white;
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+}
+.option a{
+    display: block;
+    margin-top: 3px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid palevioletred;
+}
+.main{
+    margin: 0px 13px 0px 220px;
+}
+                /* modal  */
+.outerModal{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.outerModal h1{
+    margin: 10px 40px;
+    font-size: 40px;
+}
+.outerModal a{
+    position: relative;
+    margin: 0px 60px;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.outerModal ion-icon{
+    position: relative;
+    top: 2px;
+    left: 4px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.outerModal button#myBtn{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    top: 18px;
+    background: white;
+    color: black;
+    padding: 4px;
+    margin-left: 20px;
+    border: 3px solid rgba(128, 128, 128, 0.358);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .7s;
+}
+.outerModal button#myBtn:hover{
+    width: 200px;
+    background: rgb(101, 101, 101);
+    color: white;
+    border: 1px solid black;
+}
+        /* ADD Modal Content */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.modal-content form {
+    width: 100%;
+    padding: 20px;
+}
+.modal-content span#head{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    /* color: rebeccapurple; */
+}
+.modal-content label, input {
+    margin: 3px;
+    font-size: 20px;
+}
+.modal-content label {
+    display: inline-block;
+    width: 30%;
+    margin-left: 70px;
+}
+.modal-content input, select{
+    display: inline-block;
+    border: none;
+    background: transparent;
+    letter-spacing: .9;
+    width: 50%;
+}
+.modal-content input[type = "text"]{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+}
+.modal-content button{
+    position: relative;
+    left: 46%;
+    width: 100px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    color: black;
+    border-radius: 2px;
+}
+.modal-content button:hover{
+    background: rgb(57, 57, 57);
+    color: white;
+}
+.modal-content select{
+    height: 28px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+}
+/* The Close Button */
+.close ion-icon{
+    position: relative;
+    top: -40px;
+    color: #aaaaaa;
+    margin-right: 20px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close ion-icon:hover{
+    color: black;
+}
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+                /* end ADD modal */
+table{
+    width: 100%;
+    z-index: 1;
+}
+table th{
+    background-color: #AAF0D1;
+    color: black;
+}
+table tr{
+    background: #556B2F;
+    color: white;
+}
+table tr:nth-child(even){
+    background: #ffe428;
+    color: black;
+}
+table th, td{
+    text-align: left;
+    padding: 10px 20px;
+}
+td button{
+    width: 70px;
+    height: 25px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(158, 157, 157);
+    transition: .5s;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.w15{
+    width: 15%;
+}
+.w30{
+    width: 30%;
+}
+.w45{
+    width: 45%;
+}
+
+        /* EDIT PAGE */
+.contentEdit{
+    width: 100%;
+    margin-top: 100px;
+}
+.contentEdit form {
+    text-align: center;
+}
+.contentEdit form label{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    font-size: 19px;
+}
+.contentEdit input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.contentEdit button{
+    width:  150px;
+    height: 40px;
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: width .6s, height .6s;
+}
+.contentEdit button:hover{
+    width: 170px;
+    height: 45px;
+    background: #aaaaaa;
+    color: white;
+}
+.contentEdit select{
+    width: 50%;
+    height: 24px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-bottom: 2px solid black;
+}
