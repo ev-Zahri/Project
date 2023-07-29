@@ -1,0 +1,6 @@
+Zahri|Mahasiswa|Yogyakarta|1234|Kost Al Jazahir|2023-07-15|2023-09-13|60
+asd|asd|asd|asd|Kost Bersama|2023-07-15|2023-08-14|30
+asd|asdasd|sad|asd|Kost Bersama|2023-07-15|2023-08-14|30
+Hello|asd|asd|asd|Kost Al Jazahir|2023-07-16|2023-08-15|30
+indra setya ari irawan|programer|mekkah|0001|Kost Merdeka|2023-07-11|2023-08-10|30
+Zahri Ramadhani|Mahasiswa|Yogyakarta|1234|Kost Anugrah|2023-07-20|2023-08-19|30

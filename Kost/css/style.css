@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.header {
+    background-image: url('../img/kos1.jpg');
+    width: 100%;
+    height: 745px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;
+    background: #230c0f;
+    text-align: center;
+}
+
+.navbar a{
+    display: inline-block;
+    padding: 22px;
+    text-decoration: none;
+    color: #A2D3C2;
+    font-size: 16px;
+}
+
+.navbar a:hover{
+    color: white;
+    font-size: 17px;
+}
+
+/* typing efek */
+.typing-effect {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .2s;
+    animation: typing 9s steps(1000, end);
+    display: inline-block;
+    position: relative;
+}
+  
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+.typing-effect .text{
+    margin: 250px 0px 0px 290px;
+    color: white;
+    border-bottom: 5px solid black;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 790px;
+    background: #CCC9DC;
+    color: black;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 900px;
+    height: 600px;
+    font-family: 'Aleo', serif;
+}
+.main-content h1{
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+.main-content p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.card{
+    display: inline-block;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    border: 3px solid black;
+    border-bottom: none;
+}
+
+.card img {
+    width: 250px;
+    height: 160px;
+}
+
+.card h3{
+    display: block;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+}
+
+/* Style untuk gambar */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style untuk konten dalam modal */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Style untuk tombol close pada modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 748px;
+    background: #1D2D44;
+    color: #F0EBD8;
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 1px;
+}
+.footer h3{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+
+}
+.show{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    margin-left: 20px;
+}
+.footer-left img{
+    width: 250px;
+    height: 180px;
+}
+.input{
+    display: inline-block;
+    width: 100% - 800px;
+}
+form {
+    padding: 30px;
+    margin-left: -20px;
+}
+form label{
+    display: inline-block;
+    width: 140px;
+}
+form label, input {
+    font-size: 24px;
+    margin: 10px;
+}
+form input[type = "text"]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-left: 15px;
+    background: transparent;
+    color: #F0EBD8;
+}
+form input[type = "date"]{
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+}
+form button{
+    display: block;
+    margin: 40px auto;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+}
+select {
+    width: 200px;
+    font-weight: bold;
+}
