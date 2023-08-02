@@ -1,8 +1,7 @@
 Program ini merupakan program untuk mengelola data pasien dan informasi dokter di lingkungan rumah sakit. Program ini memungkinkan pengguna untuk memasukkan data pasien, melihat daftar pasien, menambahkan dokter, melihat daftar dokter, menampilkan antrian pasien, dan mencari pasien dengan kodenya.
 
-# Sistem Manajemen Rumah Sakit
-
-Ini adalah program Sistem Manajemen Rumah Sakit sederhana yang ditulis dalam C++. Ini memungkinkan pengguna untuk mengelola data pasien dan informasi dokter.
+# DIGITALISASI RUMAH SAKIT RUNGKAD SEJAHTERA
+Ini adalah program sistem manajemen rumah sakit sederhana yang ditulis dalam C++. Ini memungkinkan pengguna untuk mengelola data pasien dan informasi dokter.
 
 ## Cara Penggunaan
 
